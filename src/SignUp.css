@@ -53,14 +53,14 @@
     color: #737373;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 3 rem;
+    margin-top: 3rem;
 }
 
-.signUp h3 a{
+.signUp h3 span{
     color: #fff;
 }
 
-.signUp h3 a:hover{
+.signUp h3 span:hover{
     color: #fff;
     text-decoration: underline;
     cursor: pointer;
