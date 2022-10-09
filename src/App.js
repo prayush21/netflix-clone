@@ -6,14 +6,21 @@ import Login from "./screens/LoginScreen";
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
+import {useDispatch, useSelector} from 'react-redux';
+import { login, selectUser } from "./redux/userSlice";
 
 function App() {
-  const user = null;
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, userAuth => {
       if(userAuth){
         console.log('logged in: userAuth', userAuth);
+        dispatch(login({
+          uid: userAuth.uid,
+          email: userAuth.email
+        }))
       } else {
         //logged out
       }
