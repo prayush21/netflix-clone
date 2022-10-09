@@ -1,0 +1,106 @@
+.loginScreen{
+    position: relative;
+    height: 100%;
+
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/afc06103-4d6a-4236-b496-34b671a7e9ba/383fc36a-aa04-4dfd-95a0-a4b71bc21eed/IN-en-20221003-popsignuptwoweeks-perspective_alpha_website_small.jpg') center no-repeat;
+    background-size: cover;
+    /* background-repeat:no-repeat;
+    background-position: center center; */
+}
+
+.loginScreen__gradient{
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0,0,0,80%),rgba(0,0,0,0%), rgba(0,0,0,90%));
+    height: 100vh;
+}
+
+.loginScreen__logo{
+    position: fixed;
+    left: 0;
+    top: 20px;
+    width: 200px;
+    padding-left: 20px;
+    object-fit: contain;
+}
+
+.loginScreen__button{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 0.35rem 0.9rem;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-weight: 400;
+    line-height: normal;
+    font-size: 1.1rem;
+    background-color: #e50914;
+    color: white;
+    border-radius: 2px;
+}
+
+.loginScreen__body{
+    z-index: 1;
+    top: 30%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+
+    padding: 25px 1 00px;
+}
+
+.loginScreen__body > h1{
+    position: relative;
+    font-size: 3.125rem;
+    margin: 0 auto;
+}
+
+.loginScreen__body > h2{
+    font-size: 1.625rem;
+    margin: 1rem auto;
+    font-weight: normal;
+}
+
+.loginScreen__body > h3{
+    /* font-size: 1.125rem;
+    margin: 1rem auto;
+    font-weight: normal; */
+    padding: 0 10%;
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.loginScreen__input{
+    padding: 20px;
+ }
+
+.loginScreen__input input{
+    padding: 0 2px;
+    height: 48px;
+    outline-width: 0;
+    width: 30%;
+    max-width: 600px;
+    border: none;
+    font-size:large;
+}
+
+.loginScreen__input button{
+    /* height: 48px; */
+    outline: none;
+    border: none;
+
+    background-color: #e50914;
+    color: white;
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
